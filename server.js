@@ -11,5 +11,5 @@ server.use(prerender.browserForceRestart());
 server.use(prerender.removeScriptTags());
 server.use(prerender.httpHeaders());
 server.use(require('prerender-memory-cache'))
-server.use(require('./baseHref'))
+server.use(prerender.baseHref());
 server.start();
